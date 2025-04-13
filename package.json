@@ -1,0 +1,27 @@
+{
+  "name": "mock-repo-with-two-dependencies",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "npm run dev --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "clean": "npm run clean --workspaces"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
